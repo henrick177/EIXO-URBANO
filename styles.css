@@ -1,0 +1,82 @@
+/* Estilos para a Navbar */
+.navbar {
+    background-color: #fff; /* Branco */
+    border-bottom: 2px solid #d4af37; /* Linha dourada na parte inferior */
+}
+
+.navbar-brand {
+    color: #d4af37;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #d4af37;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #333; /* Cor escura ao passar o mouse */
+}
+
+.navbar-toggler {
+    border-color: #d4af37;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28212, 175, 55, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.social-marquee {
+    overflow: hidden;
+    height: 24px; /* Altura do ícone */
+    display: flex;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    flex-direction: column;
+    animation: scroll 12s infinite;
+}
+
+.social-icons a {
+    color: #d4af37;
+    font-size: 1.5rem;
+    transition: transform 0.3s, color 0.3s;
+    margin-bottom: 10px; /* Espaço entre os ícones */
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    color: #333; /* Cor escura ao passar o mouse */
+}
+
+@keyframes scroll {
+    0%, 25% { transform: translateY(0); }
+    33%, 58% { transform: translateY(-24px); } /* Altura do ícone */
+    66%, 91% { transform: translateY(-48px); } /* Altura do ícone * 2 */
+    100% { transform: translateY(0); }
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+}
