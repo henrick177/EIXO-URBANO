@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eixo Urbano</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="./img/eixou-logo.jpeg" alt="EIXO URBANO" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#properties">Contato</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Imóveis
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#aluguel">Aluguel</a>
+                            <a class="dropdown-item" href="#venda">Venda</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Área do Locador</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Área do Locatário</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/eixourbano" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.youtube.com" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://wa.me/5511999999999" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="main-banner">
+            <div id="search-form">
+                <h1>Bem-vindo Ao Eixo Urbano</h1>
+                <p>Seu sonho de casa nova começa aqui!</p>
+                <form>
+                    <select name="property-type">
+                        <option value="">Tipo de Imóvel</option>
+                        <option value="casa">Casa</option>
+                        <option value="apartamento">Apartamento</option>
+                        <option value="flat">Flat</option>
+                        <option value="terreno">Terreno</option>
+                        <option value="salas-comerciais">Salas Comerciais</option>
+                    </select>
+                    <select name="location">
+                        <option value="">Localidade</option>
+                        <option value="brasilia">Brasília</option>
+                        <option value="rio-de-janeiro">Rio de Janeiro</option>
+                        <option value="sao-paulo">São Paulo</option>
+                        <option value="floripa">Floripa</option>
+                        <option value="recife">Recife</option>
+                    </select>
+                    <input type="submit" value="Pesquisar">
+                </form>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div id="cards">
+            <div class="titulos-carros">
+                <div class="card">
+                    <div class="card-body">
+                        <h1><i>Explore oportunidades incríveis,
+                            sua casa perfeita está a um clique de distância</i></h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-group">
+                <div class="card">
+                    <img src="./img/photo1.jpg" class="card-img-top" alt="Casa de Luxo">
+                    <div class="card-body">
+                        <h3 class="card-title">Casa de Luxo</h3>
+                        <p class="card-text"><i>Descubra o conforto e a elegância desta casa de luxo, localizada em um
+                                dos bairros mais prestigiados. Com design moderno e acabamentos de alta qualidade, é o
+                                lar perfeito para quem busca sofisticação.</i></p>
+                        <a href="./nossos-imoveis.html"><button type="button" class="btn btn-primary">Ver
+                                Mais</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/photo2.jpg" class="card-img-top" alt="Apartamento Moderno">
+                    <div class="card-body">
+                        <h3 class="card-title">Apartamento Moderno</h3>
+                        <p class="card-text"><i>Este apartamento moderno oferece uma vista deslumbrante da cidade, com
+                                espaços amplos e bem iluminados. Ideal para quem valoriza praticidade e estilo em um
+                                ambiente urbano.</i></p>
+                        <a href="./nossos-imoveis.html"><button type="button" class="btn btn-primary">Ver
+                                Mais</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/photo3.jpg" class="card-img-top" alt="Terreno Espaçoso">
+                    <div class="card-body">
+                        <h3 class="card-title">Terreno Espaçoso</h3>
+                        <p class="card-text"><i>Um terreno espaçoso em uma localização privilegiada, perfeito para
+                                construir a casa dos seus sonhos ou um empreendimento comercial. Aproveite esta
+                                oportunidade única.</i></p>
+                        <a href="./nossos-imoveis.html"><button type="button" class="btn btn-primary">Ver
+                                Mais</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Sobre Nós</h5>
+                    <p>Informações sobre a EIXO URBANO e nossa missão no mercado imobiliário.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <p>Email: contato@eixourbano.com.br</p>
+                    <p>Telefone: (11) 99999-9999</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Siga-nos</h5>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/eixourbano" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/5511999999999" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mt-3">
+                    <p>&copy; 2024 EIXO URBANO. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- SCRIPTS -->
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

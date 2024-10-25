@@ -1,0 +1,179 @@
+/* Estilos para a Navbar */
+.navbar {
+    background-color: #fff;
+    /* Branco */
+    border-bottom: 2px solid #d4af37;
+    /* Linha dourada na parte inferior */
+}
+
+.navbar-brand img.logo {
+    height: 100px;
+    /* Ajuste a altura conforme necessário */
+}
+
+.navbar-nav .nav-link {
+    color: #d4af37;
+    /* Dourado */
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #333;
+    /* Cor escura ao passar o mouse */
+}
+
+.navbar-toggler {
+    border-color: #d4af37;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28212, 175, 55, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-nav .nav-item .fab {
+    font-size: 1.5rem;
+    color: #d4af37;
+    /* Dourado */
+    transition: transform 0.3s, color 0.3s;
+}
+
+.navbar-nav .nav-item .fab:hover {
+    transform: scale(1.1);
+    color: #333;
+    /* Cor escura ao passar o mouse */
+}
+
+.dropdown-menu {
+    background-color: #fff;
+    /* Branco */
+    border: 1px solid #d4af37;
+    /* Borda dourada */
+}
+
+.dropdown-item {
+    color: #d4af37;
+    /* Dourado */
+}
+
+.dropdown-item:hover {
+    background-color: #d4af37;
+    /* Fundo dourado */
+    color: #fff;
+    /* Texto branco */
+}
+
+#main-banner {
+    background: url('./img/banner1.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 55%;
+    position: relative;
+    margin-top: 100px;
+}
+
+#search-form {
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15em;
+    padding-bottom: 15em;
+    text-align: center;
+}
+
+#search-form h1 {
+    font-size: 40px;
+    color: #FFF;
+}
+
+#search-form p {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #FFF;
+}
+
+#search-form input,
+#search-form select,
+#sendjobs input,
+#sendjobs select,
+#sendjobs textarea {
+    background-color: #FFF;
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+#search-form input[type=submit],
+#sendjobs input[type=submit] {
+    background-color: #d4af37;
+    text-transform: uppercase;
+    color: #FFF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#search-form input[type=submit]:hover,
+#sendjobs input[type=submit]:hover {
+    background-color: #333;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos para o Footer */
+.footer {
+    background-color: #fff; /* Branco */
+    border-top: 2px solid #d4af37; /* Linha dourada na parte superior */
+    padding: 2rem 0;
+    color: #d4af37; /* Dourado */
+}
+
+.footer h5 {
+    color: #d4af37; /* Dourado */
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    color: #333; /* Texto escuro */
+}
+
+.footer .social-icons a {
+    color: #d4af37; /* Dourado */
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    transform: scale(1.1);
+    color: #333; /* Cor escura ao passar o mouse */
+}
+
+.footer .text-center {
+    color: #333; /* Texto escuro */
+}
