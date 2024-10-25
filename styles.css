@@ -1,22 +1,34 @@
-/* Estilos para a Navbar */
-.navbar {
-    background-color: #fff; /* Branco */
-    border-bottom: 2px solid #d4af37; /* Linha dourada na parte inferior */
+/* Estilos gerais */
+body {
+    font-family: "Roboto", "Noto Sans", "Noto Sans JP", "Noto Sans KR", "Noto Sans SC Sliced", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-.navbar-brand {
-    color: #d4af37;
-    font-weight: bold;
-    font-size: 1.5rem;
+/* Estilos para a Navbar */
+.navbar {
+    background-color: #fff;
+    /* Branco */
+    border-bottom: 2px solid #d4af37;
+    /* Linha dourada na parte inferior */
+}
+
+.navbar-brand img.logo {
+    height: 100px;
+    /* Ajuste a altura conforme necessário */
 }
 
 .navbar-nav .nav-link {
     color: #d4af37;
+    /* Dourado */
     transition: color 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #333; /* Cor escura ao passar o mouse */
+    color: #333;
+    /* Cor escura ao passar o mouse */
 }
 
 .navbar-toggler {
@@ -27,56 +39,432 @@
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28212, 175, 55, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-.social-marquee {
-    overflow: hidden;
-    height: 24px; /* Altura do ícone */
-    display: flex;
-    align-items: center;
-}
-
-.social-icons {
-    display: flex;
-    flex-direction: column;
-    animation: scroll 12s infinite;
-}
-
-.social-icons a {
-    color: #d4af37;
+.navbar-nav .nav-item .fab {
     font-size: 1.5rem;
+    color: #d4af37;
+    /* Dourado */
     transition: transform 0.3s, color 0.3s;
-    margin-bottom: 10px; /* Espaço entre os ícones */
-    display: flex;
-    align-items: center;
 }
 
-.social-icons a:hover {
+.navbar-nav .nav-item .fab:hover {
     transform: scale(1.1);
-    color: #333; /* Cor escura ao passar o mouse */
-}
-
-@keyframes scroll {
-    0%, 25% { transform: translateY(0); }
-    33%, 58% { transform: translateY(-24px); } /* Altura do ícone */
-    66%, 91% { transform: translateY(-48px); } /* Altura do ícone * 2 */
-    100% { transform: translateY(0); }
-}
-
-/* Estilos gerais */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
     color: #333;
+    /* Cor escura ao passar o mouse */
 }
+
+.dropdown-menu {
+    background-color: #fff;
+    /* Branco */
+    border: 1px solid #d4af37;
+    /* Borda dourada */
+}
+
+.dropdown-item {
+    color: #d4af37;
+    /* Dourado */
+}
+
+.dropdown-item:hover {
+    background-color: #d4af37;
+    /* Fundo dourado */
+    color: #fff;
+    /* Texto branco */
+}
+
 
 section {
     padding: 2rem 0;
     text-align: center;
 }
 
-footer {
+/* Formulário Inicial */
+#main-banner {
+    background: url('./img/banner1.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 55%;
+    position: relative;
+    margin-top: 100px;
+}
+
+#search-form {
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15em;
+    padding-bottom: 15em;
+    text-align: center;
+}
+
+#search-form h1 {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+#search-form h2 {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+#search-form input,
+#search-form select,
+#sendjobs input,
+#sendjobs select,
+#sendjobs textarea {
+    background-color: #FFF;
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+#search-form input[type=submit],
+#sendjobs input[type=submit] {
+    background-color: #d4af37;
+    text-transform: uppercase;
+    color: #FFF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#search-form input[type=submit]:hover,
+#sendjobs input[type=submit]:hover {
+    background-color: #333;
+}
+
+/* Estilos para a seção de avaliação e venda de imóveis */
+#sellerLead {
+    padding: 2rem 0;
+    background-color: #f4f4f4;
+}
+
+#sellerLead .title_level_2 {
+    color: #d4af37;
+    /* Dourado */
+    margin-bottom: 1rem;
+}
+
+#sellerLead .sub-title {
+    color: #333;
+    /* Texto escuro */
+    margin-bottom: 2rem;
+}
+
+.action-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.action-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    color: #fff;
+    /* Texto branco */
+    background-color: #333;
+    /* Fundo escuro */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.action-box:hover {
+    transform: scale(1.05);
+    background-color: #444;
+    /* Fundo escuro mais claro */
+}
+
+.action-box__icon {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: #d4af37;
+    /* Dourado */
+    animation: bounce 2s infinite;
+}
+
+.action-box__content {
+    padding: 1rem;
+}
+
+.action-box__title {
+    color: #d4af37;
+    /* Dourado */
+    margin-bottom: 0.5rem;
+
+}
+
+.action-box__text {
+    color: #fff;
+    /* Texto branco */
+    margin-bottom: 1rem;
+
+}
+
+.action-box__cta {
+    color: #d4af37;
+    /* Dourado */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.action-boxes a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.action-boxes a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+/* Animação de bounce */
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Carrossel */
+#main-content {
+    width: 100%;
+    height: 70vh;
+    /* 70% da altura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cards-carousel {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    height: 70vh;
+    /* 70% da altura da tela */
+}
+
+.carousel-item img {
+    object-fit: cover;
+    height: 100%;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    /* Fundo semitransparente */
+    padding: 1rem;
+    border-radius: 8px;
+    color: #fff;
+    /* Texto branco */
+}
+
+.carousel-caption h3 {
+    color: #d4af37;
+    /* Dourado */
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #d4af37;
+    /* Dourado */
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.btn-primary {
+    background-color: #d4af37;
+    /* Dourado */
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+    /* Dourado mais escuro */
+}
+
+
+
+/* Aluguel e vendas */
+.rental-properties {
+    padding: 2rem 0;
+    background-color: #f4f4f4;
+}
+
+.rental-properties h2 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+}
+
+.rental-properties .card {
+    width: 18rem;
+    border: 1px solid #d4af37;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+}
+
+.rental-properties .card:hover {
+    transform: scale(1.05);
+}
+
+.rental-properties .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.rental-properties .card-body {
+    text-align: center;
+}
+
+.rental-properties .card-title {
+    color: #d4af37;
+    margin-bottom: 0.5rem;
+}
+
+.rental-properties .card-text {
+    color: #333;
+}
+
+.rental-properties .text-gold {
+    color: #d4af37;
+}
+
+.rental-properties .carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.rental-properties .card:hover .carousel {
+    display: block;
+}
+
+.rental-properties .carousel-inner img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.rental-properties a {
+    text-decoration: none;
+}
+
+.rental-properties a:hover {
+    text-decoration: none;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.icon-text i {
+    color: #d4af37;
+}
+
+/* Estilos para o Footer */
+.footer {
+    background-color: #fff;
+    border-top: 2px solid #d4af37;
+    padding: 2rem 0;
+    color: #d4af37;
+}
+
+.footer h5 {
+    color: #d4af37;
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    color: #333;
+}
+
+.footer .social-icons a {
+    color: #d4af37;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    transform: scale(1.1);
+    color: #333;
+}
+
+.footer .text-center {
+    color: #333;
+}
+
+.footer-section p {
+    text-indent: 1em;
+    line-height: 1.6;
+    margin: 1em 0;
+    text-align: justify;
+}
+
+.footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer .contact-info i {
+    margin-right: 0.5rem;
+}
+
+.footer .btn-gold {
+    background-color: #d4af37;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer .btn-gold:hover {
     background-color: #333;
     color: #fff;
-    padding: 1rem 0;
 }

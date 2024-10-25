@@ -1,78 +1,511 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EIXO URBANO</title>
+    <title>Eixo Urbano</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-            <a class="navbar-brand" href="#">EIXO URBANO</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">
+                <img src="./img/eixou-logo.jpeg" alt="EIXO URBANO" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#properties">Imóveis</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#properties">Contato</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Imóveis
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#aluguel">Aluguel</a>
+                            <a class="dropdown-item" href="#venda">Venda</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Área do Locador</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Área do Locatário</a></li>
                 </ul>
-                <div class="social-marquee">
-                    <div class="social-icons">
-                        <a href="https://www.instagram.com/eixourbano" target="_blank"><i class="fab fa-instagram"></i> @eixourbano</a>
-                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-                        <a href="https://wa.me/5511999999999" target="_blank"><i class="fab fa-whatsapp"></i> (11) 99999-9999</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.instagram.com/eixourbano" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.facebook.com" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.youtube.com" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://wa.me/5511999999999" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="main-banner">
+            <div id="search-form">
+                <h1>Bem-vindo Ao Eixo Urbano</h1>
+                <h2>Seu sonho de casa nova começa aqui!</h2>
+                <form>
+                    <select name="property-type">
+                        <option value="casa">Casa</option>
+                        <option value="apartamento">Apartamento</option>
+                        <option value="flat">Flat</option>
+                        <option value="terreno">Terreno</option>
+                        <option value="salas-comerciais">Salas Comerciais</option>
+                    </select>
+                    <select name="location">
+                        <option value="brasilia">Brasília</option>
+                        <option value="rio-de-janeiro">Rio de Janeiro</option>
+                        <option value="sao-paulo">São Paulo</option>
+                        <option value="floripa">Balneário Camboriú</option>
+                        <option value="recife">Recife</option>
+                    </select>
+                    <input type="submit" value="Pesquisar">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cards -->
+    <section class="container text-center space-inside-boxes" id="sellerLead">
+        <div class="row">
+            <h2 class="serif-light title_level_2">Os melhores profissionais do mercado imobiliário</h2>
+            <p class="sub-title">Confie nos profissionais mais prestigiados do mercado imobiliário para avaliar e vender
+                seus imóveis de luxo</p>
+        </div>
+        <div class="action-boxes space-before">
+            <a class="img-container overlay-box action-box" data-sell-from="from-box"
+                href="https://www.eixourbano.com.br/property-valuation">
+                <i class="action-box__icon">
+                    <i class="fas fa-home"></i>
+                </i>
+                <div class="action-box__content">
+                    <h3 class="action-box__title">Avaliar um imóvel</h3>
+                    <p class="action-box__text">Descubra o valor de mercado dos imóveis de luxo em todo o mundo</p>
+                    <span class="serif-bold action-box__cta">Iniciar Avaliação</span>
+                </div>
+            </a>
+            <a class="img-container overlay-box action-box" data-sell-from="from-box"
+                href="https://www.eixourbano.com.br/sell-property">
+                <i class="action-box__icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </i>
+                <div class="action-box__content">
+                    <h3 class="action-box__title">Vender seu imóvel</h3>
+                    <p class="action-box__text">Confie a venda do seu imóvel a um profissional do mercado imobiliário
+                    </p>
+                    <span class="serif-bold action-box__cta">Iniciar Processo de Venda</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Carrossel -->
+    <main id="main-content">
+        <section id="cards-carousel" class="carousel slide" data-ride="carousel" data-interval="3500">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/casa-de-luxo.jpg" class="d-block w-100" alt="Casa de Luxo">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Excelência em Imóveis de Luxo</h3>
+                        <p>Especialistas em imóveis de altíssimo padrão, oferecendo exclusividade e sofisticação em cada
+                            detalhe.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/BANNER2.jpg" class="d-block w-100" alt="Apartamento Moderno">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Presença Nacional</h3>
+                        <p>Com atuação em Brasília, Rio de Janeiro, São Paulo, Recife e Balneário Camboriú, estamos onde
+                            você precisa.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/banner3.jpg" class="d-block w-100" alt="Terreno Espaçoso">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3>Compromisso com a Qualidade</h3>
+                        <p>Nossa missão é proporcionar a melhor experiência imobiliária, com atendimento personalizado e
+                            imóveis de alto padrão.</p>
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <main>
-        <section id="home" class="container mt-5 pt-5">
-            <h1>Bem-vindo à EIXO URBANO</h1>
-            <p>Seu parceiro confiável no mercado imobiliário.</p>
-        </section>
-        <section id="about" class="container mt-5">
-            <h2>Sobre Nós</h2>
-            <p>Informações sobre a empresa.</p>
-        </section>
-        <section id="properties" class="container mt-5">
-            <h2>Nossos Imóveis</h2>
-            <div class="carousel">
-                <!-- Carrossel de imóveis -->
-            </div>
-        </section>
-        <section id="contact" class="container mt-5">
-            <h2>Contato</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Nome:</label>
-                    <input type="text" class="form-control" id="name" name="name">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="email" name="email">
-                </div>
-                <div class="form-group">
-                    <label for="message">Mensagem:</label>
-                    <textarea class="form-control" id="message" name="message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+            <a class="carousel-control-prev" href="#cards-carousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#cards-carousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </section>
     </main>
-    <footer class="text-center mt-5">
-        <p>&copy; 2024 EIXO URBANO. Todos os direitos reservados.</p>
+
+    <!-- Aluguéis -->
+    <section class="rental-properties container my-5">
+        <h2 class="text-center text-gold mb-4">Principais Imóveis para Aluguel</h2>
+        <div class="d-flex justify-content-center flex-wrap">
+            <a href="link-para-casa-3-quartos" target="_blank" class="card mx-2 mb-4">
+                <div id="carouselCasa3Quartos" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/aluguel1.1.jpg" class="d-block w-100" alt="Casa 3 Quartos">
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/aluguel1.jpg" class="card-img-top" alt="Casa 3 Quartos">
+                <div class="card-body">
+                    <h5 class="card-title">Quadra 12 Conjunto H</h5>
+                    <p class="card-text">JARDIM BOTANICO, BRASÍLIA - DF</p>
+                    <p class="card-text icon-text"><i class="fas fa-ruler-combined"></i> 288m²</p>
+                    <p class="card-text icon-text"><i class="fas fa-bed"></i> 3 Quartos</p>
+                    <p class="card-text text-gold">R$ 11.500,00</p>
+                </div>
+            </a>
+            <a href="link-para-apartamento-4-quartos-1" target="_blank" class="card mx-2 mb-4">
+                <div id="carouselApto4Quartos1" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/aluguel2.1.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem5.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem6.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/aluguel2.jpg" class="card-img-top" alt="Apartamento 4 Quartos">
+                <div class="card-body">
+                    <h5 class="card-title">SQNW 310</h5>
+                    <p class="card-text">NOROESTE, BRASÍLIA - DF</p>
+                    <p class="card-text icon-text"><i class="fas fa-ruler-combined"></i> 118m²</p>
+                    <p class="card-text icon-text"><i class="fas fa-bed"></i> 3 Quartos - <i class="fas fa-bath"></i> 1
+                        Suíte</p>
+                    <p class="card-text text-gold">R$ 8.700,00</p>
+                </div>
+            </a>
+            <a href="link-para-apartamento-4-quartos-2" target="_blank" class="card mx-2 mb-4">
+                <div id="carouselApto4Quartos2" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/aluguel3.1.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem8.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem9.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/aluguel3.jpg" class="card-img-top" alt="Apartamento 4 Quartos">
+                <div class="card-body">
+                    <h5 class="card-title">Rua Dos Sapotis, 307</h5>
+                    <p class="card-text">CABO DE SANTO AGOSTINHO - PE</p>
+                    <p class="card-text icon-text"><i class="fas fa-ruler-combined"></i> 238m²</p>
+                    <p class="card-text icon-text"><i class="fas fa-bed"></i> 4 Quartos - <i class="fas fa-bath"></i> 4
+                        Suítes</p>
+                    <p class="card-text text-gold">R$ 15.400,00</p>
+                </div>
+            </a>
+            <a href="link-para-apartamento-4-quartos-3" target="_blank" class="card mx-2 mb-4">
+                <div id="carouselApto4Quartos3" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/aluguel4.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem11.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem12.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/aluguel4.1.jpg" class="card-img-top" alt="Apartamento 4 Quartos">
+                <div class="card-body">
+                    <h5 class="card-title">Avenida Atlântica, 3900</h5>
+                    <p class="card-text">Balneário Camboriú - SC</p>
+                    <p class="card-text icon-text"><i class="fas fa-ruler-combined"></i> 446m²</p>
+                    <p class="card-text icon-text"><i class="fas fa-bed"></i> 3 Quartos</p>
+                    <p class="card-text text-gold">R$ 17.500,00</p>
+                </div>
+            </a>
+            <a href="link-para-apartamento-4-quartos-4" target="_blank" class="card mx-2 mb-4">
+                <div id="carouselApto4Quartos4" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/aluguel5.1.webp" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem11.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem12.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/aluguel5.webp" class="card-img-top" alt="Apartamento 4 Quartos">
+                <div class="card-body">
+                    <h5 class="card-title">Cobertura Na Rua Canário</h5>
+                    <p class="card-text">MOEMA, SÃO PAULO - SP</p>
+                    <p class="card-text icon-text"><i class="fas fa-ruler-combined"></i> 350m²</p>
+                    <p class="card-text icon-text"><i class="fas fa-bed"></i> 4 Quartos</p>
+                    <p class="card-text text-gold">R$ 20.500,00</p>
+                </div>
+            </a>
+            <a href="link-para-apartamento-4-quartos-4" target="_blank" class="card mx-2 mb-4">
+                <div id="carouselApto4Quartos4" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/aluguel6.1.webp" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem11.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem12.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/aluguel6.webp" class="card-img-top" alt="Apartamento 4 Quartos">
+                <div class="card-body">
+                    <h5 class="card-title">Rua Deputado Paulo Preis</h5>
+                    <p class="card-text">Jurerê, Florianópolis - SC</p>
+                    <p class="card-text icon-text"><i class="fas fa-ruler-combined"></i> 150m²</p>
+                    <p class="card-text icon-text"><i class="fas fa-bed"></i>4 Quartos</p>
+                    <p class="card-text text-gold">R$ 15.500,00</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Aluguéis -->
+    <section class="rental-properties container my-5">
+        <h2 class="text-center text-gold mb-4">Principais Imóveis para Aluguel</h2>
+        <div class="d-flex justify-content-center flex-wrap">
+            <a href="link-para-casa-3-quartos" target="_blank" class="card mx-2 mb-4">
+                <div id="carouselCasa3Quartos" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/aluguel1.1.jpg" class="d-block w-100" alt="Casa 3 Quartos">
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/aluguel1.jpg" class="card-img-top" alt="Casa 3 Quartos">
+                <div class="card-body">
+                    <h5 class="card-title">Quadra 12 Conjunto H</h5>
+                    <p class="card-text">JARDIM BOTANICO, BRASÍLIA - DF</p>
+                    <p class="card-text icon-text"><i class="fas fa-ruler-combined"></i> 288m²</p>
+                    <p class="card-text icon-text"><i class="fas fa-bed"></i> 3 Quartos</p>
+                    <p class="card-text text-gold">R$ 11.500,00</p>
+                </div>
+            </a>
+            <a href="link-para-apartamento-4-quartos-1" target="_blank" class="card mx-2 mb-4">
+                <div id="carouselApto4Quartos1" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/aluguel2.1.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem5.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem6.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/aluguel2.jpg" class="card-img-top" alt="Apartamento 4 Quartos">
+                <div class="card-body">
+                    <h5 class="card-title">SQNW 310</h5>
+                    <p class="card-text">NOROESTE, BRASÍLIA - DF</p>
+                    <p class="card-text icon-text"><i class="fas fa-ruler-combined"></i> 118m²</p>
+                    <p class="card-text icon-text"><i class="fas fa-bed"></i> 3 Quartos - <i class="fas fa-bath"></i> 1
+                        Suíte</p>
+                    <p class="card-text text-gold">R$ 8.700,00</p>
+                </div>
+            </a>
+            <a href="link-para-apartamento-4-quartos-2" target="_blank" class="card mx-2 mb-4">
+                <div id="carouselApto4Quartos2" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/aluguel3.1.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem8.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem9.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/aluguel3.jpg" class="card-img-top" alt="Apartamento 4 Quartos">
+                <div class="card-body">
+                    <h5 class="card-title">Rua Dos Sapotis, 307</h5>
+                    <p class="card-text">CABO DE SANTO AGOSTINHO - PE</p>
+                    <p class="card-text icon-text"><i class="fas fa-ruler-combined"></i> 238m²</p>
+                    <p class="card-text icon-text"><i class="fas fa-bed"></i> 4 Quartos - <i class="fas fa-bath"></i> 4
+                        Suítes</p>
+                    <p class="card-text text-gold">R$ 15.400,00</p>
+                </div>
+            </a>
+            <a href="link-para-apartamento-4-quartos-3" target="_blank" class="card mx-2 mb-4">
+                <div id="carouselApto4Quartos3" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/aluguel4.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem11.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem12.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/aluguel4.1.jpg" class="card-img-top" alt="Apartamento 4 Quartos">
+                <div class="card-body">
+                    <h5 class="card-title">Avenida Atlântica, 3900</h5>
+                    <p class="card-text">Balneário Camboriú - SC</p>
+                    <p class="card-text icon-text"><i class="fas fa-ruler-combined"></i> 446m²</p>
+                    <p class="card-text icon-text"><i class="fas fa-bed"></i> 3 Quartos</p>
+                    <p class="card-text text-gold">R$ 17.500,00</p>
+                </div>
+            </a>
+            <a href="link-para-apartamento-4-quartos-4" target="_blank" class="card mx-2 mb-4">
+                <div id="carouselApto4Quartos4" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/aluguel5.1.webp" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem11.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem12.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/aluguel5.webp" class="card-img-top" alt="Apartamento 4 Quartos">
+                <div class="card-body">
+                    <h5 class="card-title">Cobertura Na Rua Canário</h5>
+                    <p class="card-text">MOEMA, SÃO PAULO - SP</p>
+                    <p class="card-text icon-text"><i class="fas fa-ruler-combined"></i> 350m²</p>
+                    <p class="card-text icon-text"><i class="fas fa-bed"></i> 4 Quartos</p>
+                    <p class="card-text text-gold">R$ 20.500,00</p>
+                </div>
+            </a>
+            <a href="link-para-apartamento-4-quartos-4" target="_blank" class="card mx-2 mb-4">
+                <div id="carouselApto4Quartos4" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./img/aluguel6.1.webp" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem11.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagem12.jpg" class="d-block w-100" alt="Apartamento 4 Quartos">
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/aluguel6.webp" class="card-img-top" alt="Apartamento 4 Quartos">
+                <div class="card-body">
+                    <h5 class="card-title">Rua Deputado Paulo Preis</h5>
+                    <p class="card-text">Jurerê, Florianópolis - SC</p>
+                    <p class="card-text icon-text"><i class="fas fa-ruler-combined"></i> 150m²</p>
+                    <p class="card-text icon-text"><i class="fas fa-bed"></i>4 Quartos</p>
+                    <p class="card-text text-gold">R$ 15.500,00</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <p class="contact-info"><i class="fas fa-envelope"></i>Email: <a href="mailto:contato@eixourbano.com.br">contato@eixourbano.com.br</a></p>
+                    <p class="contact-info"><i class="fas fa-phone"></i>Telefone: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
+                    <a href="https://www.eixourbano.com.br/contact" class="text-gold">Entre em contato</a>
+                    <h5 class="mt-4">Siga-nos</h5>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/eixourbano" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.youtube.com" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://wa.me/5511999999999" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <section id="about-us" class="footer-section">
+                        <h5 class="text-gold">Sobre Nós</h5>
+                        <p>
+                            A Eixo Urbano é uma imobiliária especializada em imóveis de altíssimo padrão, presente nas
+                            principais cidades do Brasil: Brasília, Rio de Janeiro, São Paulo, Recife e Balneário
+                            Camboriú. Nosso compromisso é oferecer exclusividade, sofisticação e um atendimento
+                            personalizado para garantir a melhor experiência imobiliária aos nossos clientes.
+                        </p>
+                        <a href="https://www.eixourbano.com.br/about-us" class="btn btn-gold">Saiba mais</a>
+                    </section>
+                </div>
+                <div class="col-md-4">
+                    <h5>Endereços</h5>
+                    <p><i class="fas fa-map-marker-alt"></i> Brasília: Setor Comercial Sul, Quadra 5, Bloco A</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Rio de Janeiro: Avenida Atlântica, 1702, Copacabana</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo: Avenida Paulista, 1230, Bela Vista</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Recife: Rua dos Navegantes, 345, Boa Viagem</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Balneário Camboriú: Avenida Brasil, 500, Centro</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mt-3">
+                    <p>&copy; 2024 EIXO URBANO. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- SCRIPTS -->
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 </body>
+
 </html>
