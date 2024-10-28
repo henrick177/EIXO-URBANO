@@ -16,7 +16,7 @@ body {
 }
 
 .navbar-brand img.logo {
-    height: 100px;
+    height: 80px;
     /* Ajuste a altura conforme necessário */
 }
 
@@ -468,3 +468,195 @@ section {
     background-color: #333;
     color: #fff;
 }
+
+
+/* Página Sobre Nós */
+
+.about-us {
+    padding: 4rem 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.about-us h2,
+.about-us h3 {
+    color: #d4af37;
+    margin-bottom: 2rem;
+}
+
+.about-us p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.about-us .card {
+    margin-bottom: 2rem;
+    border: 1px solid #d4af37;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+}
+
+.about-us .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-us .card-header {
+    background-color: #d4af37;
+    color: #fff;
+}
+
+.about-us .icon {
+    color: #d4af37;
+    margin-right: 0.5rem;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-us .card {
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.about-us .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Seção de Login */
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./img/banner5.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Card de Login */
+.login-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Cabeçalho do Card */
+.login-card .card-header {
+    background-color: #d4af37; /* Cor primária da Eixo Urbano */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Formulário */
+.login-card .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.login-card .form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.login-card .btn-success {
+    background-color: #d4af37;; /* Cor secundária da Eixo Urbano */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.login-card .btn-success:hover {
+    background-color: #333; /* Cor secundária escura da Eixo Urbano */
+}
+
+.login-card .text-decoration-none {
+    color: #333; /* Cor primária da Eixo Urbano */
+}
+
+.login-card .text-decoration-none:hover {
+    text-decoration: underline;
+}
+
+/* Seção de Cadastro */
+.cadastro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(./img/banner5.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Card de Cadastro */
+.cadastro-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Cabeçalho do Card */
+.cadastro-card .card-header {
+    background-color: #d4af37; /* Cor primária da Eixo Urbano */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Formulário */
+.cadastro-card .form-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.cadastro-card .form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.cadastro-card .btn-success {
+    background-color: #d4af37; /* Cor secundária da Eixo Urbano */
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.cadastro-card .btn-success:hover {
+    background-color: #333; /* Cor secundária escura da Eixo Urbano */
+}
+
+.cadastro-card .text-decoration-none {
+    color: #333; /* Cor primária da Eixo Urbano */
+}
+
+.cadastro-card .text-decoration-none:hover {
+    text-decoration: underline;
+}
+
+
